@@ -1,5 +1,5 @@
 /*
-* Alexa Multi Smart Device Emulator
+* Alexa Multi Smart Device Emulator example
 * vasco dot santos at vslinux dot net
 * v0.2 - 28/01/2019
 */
