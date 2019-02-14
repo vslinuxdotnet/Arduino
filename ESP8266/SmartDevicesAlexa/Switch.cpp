@@ -228,7 +228,7 @@ void ICACHE_FLASH_ATTR Switch::respondToSearch(IPAddress& senderIP, unsigned sho
 
   IPAddress localIP = WiFi.localIP();
   char s[16];
-  //sprintf(s, "%d.%d.%d.%d", localIP[0], localIP[1], localIP[2], localIP[3]);
+  sprintf(s, "%d.%d.%d.%d", localIP[0], localIP[1], localIP[2], localIP[3]);
 //FPSTR(
 char response[strlen_P( BELKIN_response_model) + strlen_P(s) + sizeof(localPort)+strlen_P(persistent_uuid.c_str())];
     snprintf_P(response, sizeof(response),  BELKIN_response_model, s, localPort, persistent_uuid.c_str());
